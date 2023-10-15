@@ -340,8 +340,12 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
+    android.hardware.power-service.oplus-libperfmgr \
     android.hardware.power@1.2.vendor \
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # QMI
 PRODUCT_PACKAGES += \
