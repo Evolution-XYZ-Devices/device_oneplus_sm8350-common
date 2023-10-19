@@ -156,7 +156,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+TARGET_TAP_TO_WAKE_NODE := /proc/touchpanel/double_tap_enable
 
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
@@ -223,6 +223,10 @@ WIFI_DRIVER_STATE_ON := "ON"
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+
+#Extra Soong variables
+SOONG_CONFIG_evolutionGlobalVars += target_tap_to_wake_node
+SOONG_CONFIG_evolutionGlobalVars_target_tap_to_wake_node := $(TARGET_TAP_TO_WAKE_NODE)
 
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/sm8350-common/BoardConfigVendor.mk

@@ -1,5 +1,23 @@
+soong_config_module_type {
+    name: "tap_to_wake_node",
+    module_type: "cc_defaults",
+    config_namespace: "evolutionGlobalVars",
+    value_variables: ["target_tap_to_wake_node"],
+    properties: ["cppflags"],
+}
+
+tap_to_wake_node {
+    name: "tap_to_wake_node_defaults",
+    soong_config_variables: {
+        target_tap_to_wake_node: {
+            cppflags: ["-DTAP_TO_WAKE_NODE=\"%s\""],
+        },
+    },
+}
+
 cc_binary {
     name: "android.hardware.power-service.oplus-libperfmgr",
+    defaults: ["tap_to_wake_node_defaults"],
     relative_install_path: "hw",
     init_rc: ["aidl/android.hardware.power-service.oplus-libperfmgr.rc"],
     vintf_fragments: ["aidl/android.hardware.power-service.oplus.xml"],
