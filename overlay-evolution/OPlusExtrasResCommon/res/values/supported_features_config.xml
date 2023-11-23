@@ -47,4 +47,7 @@
     <!-- Whether device supports Vibration Strength -->
     <bool name="config_deviceSupportsVibStrength">true</bool>
 
+    <!-- Whether device supports MSM Touchboost -->
+    <bool name="config_deviceSupportsTouchboost">true</bool>
+
 </resources>

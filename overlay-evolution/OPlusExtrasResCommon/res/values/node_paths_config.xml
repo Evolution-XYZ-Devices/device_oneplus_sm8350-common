@@ -47,4 +47,7 @@
     <!-- Vibration strength sysfs node path -->
     <string name="node_vibrator_strength_preference" translatable="false">/sys/devices/platform/soc/88c000.i2c/i2c-6/6-005a/leds/vibrator/level</string>
 
+    <!-- MSM Touchboost sysfs node path -->
+    <string name="node_touchboost_switch" translatable="false">/sys/module/msm_performance/parameters/touchboost</string>
+
 </resources>
