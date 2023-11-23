@@ -28,4 +28,7 @@
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
 
+    <!-- Battery Health -->
+    <string name="config_batteryRemainingCapacityNode">/sys/class/power_supply/battery/charge_full</string>
+    <string name="config_batteryDesignCapacityNode">/sys/class/power_supply/battery/charge_full_design</string>
 </resources>
