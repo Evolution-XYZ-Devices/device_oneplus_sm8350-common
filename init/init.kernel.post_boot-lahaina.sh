@@ -100,7 +100,6 @@ function oplus_configure_tunning_swappiness() {
     fi
 }
 
-#ifdef OPLUS_FEATURE_ZRAM_OPT
 function oppo_configure_zram_parameters() {
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
@@ -158,7 +157,6 @@ function oplus_configure_hybridswap() {
 	echo 500 > /dev/memcg/system/memory.app_score
 	echo systemserver > /dev/memcg/system/memory.name
 }
-#endif /*OPLUS_FEATURE_ZRAM_OPT*/
 
 function configure_read_ahead_kb_values() {
 	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
@@ -216,7 +214,6 @@ function configure_memory_parameters() {
 	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
 	MemTotal=${MemTotalStr:16:8}
 
-#ifdef OPLUS_FEATURE_ZRAM_OPT
 	# For vts test which has replace system.img
 	ls -l /product | grep '\-\>'
 	if [ $? -eq 0 ]; then
@@ -229,9 +226,7 @@ function configure_memory_parameters() {
 		fi
 	fi
         oplus_configure_tunning_swappiness
-#else
-#       configure_zram_parameters
-#endif /*OPLUS_FEATURE_ZRAM_OPT*/
+
 	configure_read_ahead_kb_values
 	echo 0 > /proc/sys/vm/page-cluster
 
@@ -242,9 +237,6 @@ function configure_memory_parameters() {
 #	fi
 
 	echo 0 > /proc/sys/vm/watermark_boost_factor
-#ifndef OPLUS_FEATURE_ZRAM_OPT
-#	echo 100 > /proc/sys/vm/swappiness
-#endif /*OPLUS_FEATURE_ZRAM_OPT*/
 }
 
 rev=`cat /sys/devices/soc0/revision`
