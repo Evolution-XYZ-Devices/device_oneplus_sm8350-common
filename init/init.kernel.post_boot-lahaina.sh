@@ -301,12 +301,6 @@ echo 1 > /dev/cpuctl/background/cpu.uclamp.top_task_filter
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
 
-#config power effiecny tunning parameters
-echo 1 > /sys/module/cpufreq_effiency/parameters/affect_mode
-echo "300000,45000,1209600,50000,0"  > /sys/module/cpufreq_effiency/parameters/cluster0_effiency
-echo "710400,45000,1881600,50000,0"  > /sys/module/cpufreq_effiency/parameters/cluster1_effiency
-echo "844800,50000,2035200,55000,0"  > /sys/module/cpufreq_effiency/parameters/cluster2_effiency
-
 # configure governor settings for silver cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
