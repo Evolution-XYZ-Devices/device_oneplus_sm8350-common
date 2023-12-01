@@ -459,18 +459,7 @@ do
 	done
 done
 echo N > /sys/module/lpm_levels/parameters/sleep_disabled
-#Add for sleep mode adjust. 2020-12-04
-inner_temp_boot_mode=`getprop sys.oppo_ftm_mode`
-case "$inner_temp_boot_mode" in
-	"3")
-		echo "Use s2idle(ftm, sleep to idle) sleep mode"
-		echo s2idle > /sys/power/mem_sleep
-	;;
-	*)
-		echo "Use deep(sleep to mem) sleep mode"
-		echo deep > /sys/power/mem_sleep
-	;;
-esac
+echo s2idle > /sys/power/mem_sleep
 configure_memory_parameters
 
 # Let kernel know our image version/variant/crm_version
