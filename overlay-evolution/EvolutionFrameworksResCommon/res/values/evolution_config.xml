@@ -49,12 +49,33 @@
          config to 7. -->
     <integer name="config_deviceHardwareKeys">64</integer>
 
+    <string-array name="config_cameraAuxPackageAllowList" translatable="false">
+        <item>com.android.camera</item>
+        <item>com.google.android.apps.cameralite</item>
+        <item>org.codeaurora.snapcam</item>
+        <item>org.lineageos.aperture</item>
+        <item>org.lineageos.aperture.dev</item>
+        <item>org.pixelexperience.faceunlock</item>
+        <item>com.oplus.camera</item>
+        <item>com.ss.android.ugc.aweme</item>
+        <item>com.samsung.android.scan3d</item>
+        <item>com.google.android.GoogleCameraEng</item>
+    </string-array>
+
     <!-- The list of package IDs that are not allowed to use aux cameras. -->
     <string-array name="config_cameraAuxPackageExcludeList" translatable="false">
         <item>org.telegram.messenger</item>
         <item>org.thunderdog.challegram</item>
         <item>us.zoom.videomeetings</item>
     </string-array>
+
+    <!-- The list of package IDs that are allowed to skip camera high frame rate checks. -->
+    <string-array name="config_cameraHFRPrivAppList" translatable="false">
+        <item>com.oplus.camera</item>
+        <item>org.lineageos.aperture</item>
+        <item>org.lineageos.aperture.dev</item>
+        <item>org.codeaurora.snapcam</item>
+    </string-array> 
 
     <!-- Does the device have a notification led -->
     <bool name="config_hasNotificationLed">false</bool>
