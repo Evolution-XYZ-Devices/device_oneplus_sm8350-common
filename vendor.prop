@@ -84,7 +84,7 @@ persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
 ro.bluetooth.a2dp_offload.supported=true
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
