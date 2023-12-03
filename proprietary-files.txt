@@ -1368,7 +1368,6 @@ vendor/lib/libwfdutils_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 
-
 #OnePlus Camera
 my_product/etc/camera/engineer_camera_config:system_ext/etc/camera/engineer_camera_config
 my_product/etc/camera/mtInputparam.xml:system_ext/etc/camera/mtInputparam.xml
@@ -1416,20 +1415,10 @@ odm/etc/camera/model/license.lic
 odm/etc/camera/singleblur/license_release.lic
 odm/etc/camera/singleblur/license_release.license
 odm/etc/camera/dng/ColorMatrix1_imx766_2.txt
-odm/etc/camera/dng/ColorMatrix1_imx789_0.txt
-odm/etc/camera/dng/ColorMatrix1_ov08a10_3.txt
 odm/etc/camera/dng/ColorMatrix2_imx766_2.txt
-odm/etc/camera/dng/ColorMatrix2_imx789_0.txt
-odm/etc/camera/dng/ColorMatrix2_ov08a10_3.txt
 odm/etc/camera/dng/D28HUESATMap_imx766_2.txt
-odm/etc/camera/dng/D28HUESATMap_imx789_0.txt
-odm/etc/camera/dng/D28HUESATMap_ov08a10_3.txt
 odm/etc/camera/dng/D65HUESATMap_imx766_2.txt
-odm/etc/camera/dng/D65HUESATMap_imx789_0.txt
-odm/etc/camera/dng/D65HUESATMap_ov08a10_3.txt
 odm/etc/camera/dng/ToneCurve_imx766_2.txt
-odm/etc/camera/dng/ToneCurve_imx789_0.txt
-odm/etc/camera/dng/ToneCurve_ov08a10_3.txt
 odm/etc/camera/gesture/modules/tt_hand_box_reg_v12.0.model
 odm/etc/camera/gesture/modules/tt_hand_det_v11.0.model
 odm/etc/camera/gesture/modules/tt_hand_gesture_v11.1.model
