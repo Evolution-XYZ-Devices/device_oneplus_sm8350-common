@@ -1,12 +1,12 @@
 [
   {
     "repository"  : "hardware_oplus",
-    "branch"      : "tiramisu-cleaned",
+    "branch"      : "tiramisu",
     "target_path" : "hardware/oplus"
   },
   {
     "repository"  : "kernel_oneplus_sm8350",
-    "branch"      : "udc",
+    "branch"      : "tiramisu",
     "target_path" : "kernel/oneplus/sm8350"
   },
   {
