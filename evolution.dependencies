@@ -13,5 +13,9 @@
     "repository"  : "vendor_oneplus_sm8350-common",
     "branch"  : "udc",
     "target_path" : "vendor/oneplus/sm8350-common"
+  },
+  {
+    "repository"  : "packages_apps_OPlusExtras",
+    "target_path" : "packages/apps/OPlusExtras"
   }
 ]
