@@ -21,7 +21,7 @@
     <bool name="config_deviceSupportsKcal">true</bool>
 
     <!-- Whether device supports Changing Maximum Brightness -->
-    <bool name="config_deviceSupportsChangingMaxBrightness">true</bool>
+    <bool name="config_deviceSupportsChangingMaxBrightness">false</bool>
 
     <!-- Whether device supports Disabling fsync -->
     <bool name="config_deviceSupportsFSyncOff">true</bool>

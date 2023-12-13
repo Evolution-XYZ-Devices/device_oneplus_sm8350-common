@@ -24,7 +24,7 @@
     <string name="node_keep_pcc_switch" translatable="false">/sys/kernel/oplus_display/skip_pcc_override</string>
 
     <!-- Max Brightness sysfs node path-->
-    <string name="node_max_brightness_preference" translatable="false">/sys/kernel/oplus_display/max_brightness</string>
+    <!--<string name="node_max_brightness_preference" translatable="false">/sys/kernel/oplus_display/max_brightness</string>-->
 
     <!-- FSync sysfs node path-->
     <string name="node_fsync_switch" translatable="false">/sys/module/sync/parameters/fsync_enabled</string>
