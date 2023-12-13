@@ -321,6 +321,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.oplus-libperfmgr \
     android.hardware.power@1.2.vendor \
+    vendor.qti.hardware.perf@2.2.vendor
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
